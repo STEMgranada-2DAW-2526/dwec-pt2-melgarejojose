@@ -8,7 +8,19 @@ const initialState = {
 };
 
 export default function App() {
-  function
+  function contadorReducer(state, action) {
+    if (action.type == 'CLICK_SHOOT'){
+
+    }else if (action.type == 'AUTO_SHOOT'){
+
+    }else if (action.type == 'BUY_MULTIPLIER'){
+      
+    }else if (action.type == 'BUY_DAMAGE_UPGRADE'){
+      
+    }else if (action.type == 'NEXT_WAVE'){
+      
+    }
+  }
 
   return (
     <>
