@@ -7,7 +7,7 @@ import { GameProvider } from './GameContext';
 function App() {
 
   return (
-    <>
+    <> 
       <GameProvider>
         <Game/>
         <UpgradesBoard/>
