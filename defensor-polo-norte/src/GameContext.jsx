@@ -12,10 +12,42 @@ const initialState = {
 export default function GameProvider({ children }) {
     function gameReducer(state, action) {
 
-        
+        let outputState = state;
+
+        if (action.type == 'CLICK_SHOOT') {
+            outputState = {
+
+            }
+        }
+        else if (action.type == 'AUTO_SHOOT') {
+            outputState =
+            {
+
+            }
+        }
+        else if (action.type == 'BUY_MULTIPLIER') {
+            outputState =
+            {
+
+            }
+        }
+        else if (action.type == 'BUY_DAMAGE_UPGRADE') {
+            outputState =
+            {
+
+            }
+        }
+        else if (action.type == 'NEXT_WAVE') {
+            outputState =
+            {
+
+            }
+        }
 
         return outputState;
     }
+
+    const [state, dispatch] = useReducer(gameReducer, INITIAL_STATE)
 
     return (
         <GameContext.Provider value={{ state, dispatch }}>
